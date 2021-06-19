@@ -4044,7 +4044,8 @@ a.read-more-btn2.btn:hover {
 }
 
 .w3l-banner-slider-main .carousel-item {
-  background: url(../images/banner1.jpg) no-repeat center;
+  background: url("https://firebasestorage.googleapis.com/v0/b/project-khachhang-md.appspot.com/o/imgShop%2FCarousel_IMG%2Fz2464214580531_5c001a06ed6271f09acbe7c8137a3ab0.jpg?alt=media&token=880686a5-5cfb-48be-ad5b-35d1a425f997")
+    no-repeat center;
   background-size: cover;
   -webkit-background-size: cover;
   -o-background-size: cover;
@@ -4053,7 +4054,9 @@ a.read-more-btn2.btn:hover {
 }
 
 .w3l-banner-slider-main .carousel-item.item2 {
-  background: url(../images/banner2.jpg) no-repeat center;
+  background: url("https://firebasestorage.googleapis.com/v0/b/project-khachhang-md.appspot.com/o/imgShop%2FCarousel_IMG%2Fcarousel1.jpg?alt=media&token=1ec36f03-f165-4adf-847e-3dc71fee94a1")
+    no-repeat center;
+
   background-size: cover;
   -webkit-background-size: cover;
   -o-background-size: cover;
@@ -4126,14 +4129,20 @@ a.read-more-btn2.btn:hover {
 }
 
 .w3l-banner-slider-main .right-banner {
-  background: url(../images/left3.jpg) no-repeat center;
+  background: url("https://firebasestorage.googleapis.com/v0/b/project-khachhang-md.appspot.com/o/imgShop%2FCarousel_IMG%2F143323479_1659381614451612_2627287972588945642_n%5B1%5D.jpg?alt=media&token=0a4b401f-7a4f-4e92-a6ac-ea070cbd3e9e")
+    no-repeat center;
   background-size: cover;
+
   display: grid;
+  opacity: 0.9;
   align-items: center;
   /* min-height: 100%; */
   min-height: 46em;
 }
-
+.w3l-banner-slider-main .right-banner::before {
+  background: rgba(16, 16, 16, 0.470588);
+  z-index: -1;
+}
 .w3l-banner-slider-main .right-1 {
   padding: 4em;
 }
@@ -18986,10 +18995,20 @@ a.text-dark:focus {
 }
 .cartContainer ul li {
   list-style: none;
+  display: flex;
+  justify-content: space-around;
 }
 .onCart {
   display: flex;
 }
 .offCart {
   display: none;
+}
+.header_cart {
+  display: flex;
+  justify-content: space-between;
+}
+.header_cart span {
+  cursor: pointer;
+  background-color: #f5f0f0;
 }

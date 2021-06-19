@@ -22,8 +22,8 @@ const loadingProduct = (data) => {
     <div class="product-grid2 ">
         <div class="product-image2">
             
-                <img class="pic-1 img-fluid" src="assets/images/shop-1.jpg">
-                <img class="pic-2 img-fluid" src="assets/images/shop-11.jpg">
+                <img class="pic-1 img-fluid" src="${data[i].link1}">
+98                <img class="pic-2 img-fluid" src="${data[i].link2}">
             
                 <button class="add-to-cart" onclick="myFunction(${data[i].id})">Click</button>
            
