@@ -43,14 +43,12 @@ Author URL: http://w3layouts.com
 							</a>
 						</li>
 						<li class="transmitvcart galssescart2 cart cart box_1">
-							<form action="#" method="post" class="last">
-								<input type="hidden" name="cmd" value="_cart">
-								<input type="hidden" name="display" value="1">
-								<button class="top_transmitv_cart" type="submit" name="submit" value="">
+							
+								<button class="top_transmitv_cart" onclick="clickCart()" >
 									GIỎ HÀNG
 									<span class="fa fa-shopping-cart"></span>
 								</button>
-							</form>
+				
 						</li>
 					</ul>
 					<!--//right-->
@@ -230,8 +228,22 @@ Author URL: http://w3layouts.com
 						THỜI TRANG NAM
 						<br>50% Off</h4>
 				</div>
-			</div>
+				<div class="cartContainer"id='cartContainer'>
+					<h4>CART</h4>
+					<ul id="ulCart">
+						<li> 
+							<span>áo sơ mi</span>
+							<span>số lượng :1</span>
+							<span>10.000</span>
+						</li>
+				    </ul>
+					<div class="cart_content" id="cart_content">
+						Tổng Tiền: 
+					</div>
 
+				</div>
+			</div>
+            
 		</div>
 
 </section>
@@ -397,265 +409,16 @@ Author URL: http://w3layouts.com
 			<h3 class="hny-title mb-0 text-center">MUA HÀNG VỚI <span>CHÚNG TÔI</span></h3>
 			<p class="text-center">Chọn Sản Phẩm Bạn Thích</p>
 			<!-- /row-->
-			<div class="ecom-products-grids row mt-lg-5 mt-3">
-				<div class="col-lg-3 col-6 product-incfhny mt-4">
-					<div class="product-grid2 transmitv">
-						<div class="product-image2">
-							<a href="#">
-								<img class="pic-1 img-fluid" src="assets/images/shop-1.jpg">
-								<img class="pic-2 img-fluid" src="assets/images/shop-11.jpg">
-							</a>
-							<ul class="social">
-									<li><a href="#" data-tip="Quick View"><span class="fa fa-eye"></span></a></li>
+			<div class="ecom-products-grids row mt-lg-5 mt-3" id="productsss">
+			
 
-									<li><a href="#" data-tip="Add to Cart"><span class="fa fa-shopping-bag"></span></a>
-									</li>
-							</ul>
-							<div class="transmitv single-item">
-							<form action="#" method="post">
-									<input type="hidden" name="cmd" value="_cart">
-									<input type="hidden" name="add" value="1">
-									<input type="hidden" name="transmitv_item" value="Women Maroon Top">
-									<input type="hidden" name="amount" value="899.99">
-									<button type="submit" class="transmitv-cart ptransmitv-cart add-to-cart">
-										Add to Cart
-									</button>
-								</form>
-							</div>
-						</div>
-						<div class="product-content">
-							<h3 class="title"><a href="#">Women Maroon Top </a></h3>
-							<span class="price"><del>$975.00</del>$899.99</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-6 product-incfhny mt-4">
-					<div class="product-grid2">
-						<div class="product-image2">
-							<a href="#">
-								<img class="pic-1 img-fluid" src="assets/images/shop-2.jpg">
-								<img class="pic-2 img-fluid" src="assets/images/shop-22.jpg">
-							</a>
-							<ul class="social">
-									<li><a href="#" data-tip="Quick View"><span class="fa fa-eye"></span></a></li>
-
-									<li><a href="#" data-tip="Add to Cart"><span class="fa fa-shopping-bag"></span></a>
-									</li>
-							</ul>
-							<div class="transmitv single-item">
-									<form action="#" method="post">
-											<input type="hidden" name="cmd" value="_cart">
-											<input type="hidden" name="add" value="1">
-											<input type="hidden" name="transmitv_item" value="Men's Pink Shirt">
-											<input type="hidden" name="amount" value="599.99">
-											<button type="submit" class="transmitv-cart ptransmitv-cart add-to-cart">
-												Add to Cart
-											</button>
-										</form>
-									</div>
-						</div>
-						<div class="product-content">
-							<h3 class="title"><a href="#">Men's Pink Shirt </a></h3>
-							<span class="price"><del>$775.00</del>$599.99</span>
-						</div>
-					</div>
-
-				</div>
-				<div class="col-lg-3 col-6 product-incfhny mt-4">
-					<div class="product-grid2">
-						<div class="product-image2">
-							<a href="#">
-								<img class="pic-1 img-fluid" src="assets/images/shop-3.jpg">
-								<img class="pic-2 img-fluid" src="assets/images/shop-33.jpg">
-							</a>
-							<ul class="social">
-									<li><a href="#" data-tip="Quick View"><span class="fa fa-eye"></span></a></li>
-
-									<li><a href="#" data-tip="Add to Cart"><span class="fa fa-shopping-bag"></span></a>
-									</li>
-							</ul>
-							<div class="transmitv single-item">
-									<form action="#" method="post">
-											<input type="hidden" name="cmd" value="_cart">
-											<input type="hidden" name="add" value="1">
-											<input type="hidden" name="transmitv_item" value="Dark Blue Top">
-											<input type="hidden" name="amount" value="799.99">
-											<button type="submit" class="transmitv-cart ptransmitv-cart add-to-cart">
-												Add to Cart
-											</button>
-										</form>
-									</div>
-						</div>
-						<div class="product-content">
-							<h3 class="title"><a href="#">Dark Blue Top </a></h3>
-							<span class="price"><del>$875.00</del>$799.99</span>
-						</div>
-					</div>
-
-				</div>
-				<div class="col-lg-3 col-6 product-incfhny mt-4">
-					<div class="product-grid2">
-						<div class="product-image2">
-							<a href="#">
-								<img class="pic-1 img-fluid" src="assets/images/shop-4.jpg">
-								<img class="pic-2 img-fluid" src="assets/images/shop-44.jpg">
-							</a>
-							<ul class="social">
-									<li><a href="#" data-tip="Quick View"><span class="fa fa-eye"></span></a></li>
-
-									<li><a href="#" data-tip="Add to Cart"><span class="fa fa-shopping-bag"></span></a>
-									</li>
-							</ul>
-							<div class="transmitv single-item">
-									<form action="#" method="post">
-											<input type="hidden" name="cmd" value="_cart">
-											<input type="hidden" name="add" value="1">
-											<input type="hidden" name="transmitv_item" value="Women Tunic">
-											<input type="hidden" name="amount" value="399.99">
-											<button type="submit" class="transmitv-cart ptransmitv-cart add-to-cart">
-												Add to Cart
-											</button>
-										</form>
-									</div>
-						</div>
-						<div class="product-content">
-							<h3 class="title"><a href="#">Women Tunic </a></h3>
-							<span class="price"><del>$475.00</del>$399.99</span>
-						</div>
-					</div>
-
-				</div>
-				<div class="col-lg-3 col-6 product-incfhny mt-4">
-					<div class="product-grid2">
-						<div class="product-image2">
-							<a href="#">
-								<img class="pic-1 img-fluid" src="assets/images/shop-5.jpg">
-								<img class="pic-2 img-fluid" src="assets/images/shop-55.jpg">
-							</a>
-							<ul class="social">
-									<li><a href="#" data-tip="Quick View"><span class="fa fa-eye"></span></a></li>
-
-									<li><a href="#" data-tip="Add to Cart"><span class="fa fa-shopping-bag"></span></a>
-									</li>
-							</ul>
-							<div class="transmitv single-item">
-									<form action="#" method="post">
-											<input type="hidden" name="cmd" value="_cart">
-											<input type="hidden" name="add" value="1">
-											<input type="hidden" name="transmitv_item" value="Yellow T-Shirt">
-											<input type="hidden" name="amount" value="299.99">
-											<button type="submit" class="transmitv-cart ptransmitv-cart add-to-cart">
-												Add to Cart
-											</button>
-										</form>
-									</div>
-						</div>
-						<div class="product-content">
-							<h3 class="title"><a href="#">Yellow T-Shirt</a></h3>
-							<span class="price"><del>$575.00</del>$299.99</span>
-						</div>
-					</div>
-
-				</div>
-				<div class="col-lg-3 col-6 product-incfhny mt-4">
-					<div class="product-grid2">
-						<div class="product-image2">
-							<a href="#">
-								<img class="pic-1 img-fluid" src="assets/images/shop-6.jpg">
-								<img class="pic-2 img-fluid" src="assets/images/shop-66.jpg">
-							</a>
-							<ul class="social">
-									<li><a href="#" data-tip="Quick View"><span class="fa fa-eye"></span></a></li>
-
-									<li><a href="#" data-tip="Add to Cart"><span class="fa fa-shopping-bag"></span></a>
-									</li>
-							</ul>
-							<div class="transmitv single-item">
-									<form action="#" method="post">
-											<input type="hidden" name="cmd" value="_cart">
-											<input type="hidden" name="add" value="1">
-											<input type="hidden" name="transmitv_item" value="Straight Kurta">
-											<input type="hidden" name="amount" value="699.99">
-											<button type="submit" class="transmitv-cart ptransmitv-cart add-to-cart">
-												Add to Cart
-											</button>
-										</form>
-									</div>
-						</div>
-						<div class="product-content">
-							<h3 class="title"><a href="#">Straight Kurta </a></h3>
-							<span class="price"><del>$775.00</del>$699.99</span>
-						</div>
-					</div>
-
-				</div>
-				<div class="col-lg-3 col-6 product-incfhny mt-4">
-					<div class="product-grid2">
-						<div class="product-image2">
-							<a href="#">
-								<img class="pic-1 img-fluid" src="assets/images/shop-7.jpg">
-								<img class="pic-2 img-fluid" src="assets/images/shop-77.jpg">
-							</a>
-							<ul class="social">
-									<li><a href="#" data-tip="Quick View"><span class="fa fa-eye"></span></a></li>
-
-									<li><a href="#" data-tip="Add to Cart"><span class="fa fa-shopping-bag"></span></a>
-									</li>
-							</ul>
-							<div class="transmitv single-item">
-									<form action="#" method="post">
-											<input type="hidden" name="cmd" value="_cart">
-											<input type="hidden" name="add" value="1">
-											<input type="hidden" name="transmitv_item" value="White T-Shirt">
-											<input type="hidden" name="amount" value="599.99">
-											<button type="submit" class="transmitv-cart ptransmitv-cart add-to-cart">
-												Add to Cart
-											</button>
-										</form>
-									</div>
-						</div>
-						<div class="product-content">
-							<h3 class="title"><a href="#">White T-Shirt </a></h3>
-							<span class="price"><del>$675.00</del>$599.99</span>
-						</div>
-					</div>
-
-				</div>
-				<div class="col-lg-3 col-6 product-incfhny mt-4">
-					<div class="product-grid2">
-						<div class="product-image2">
-							<a href="#">
-								<img class="pic-1 img-fluid" src="assets/images/shop-8.jpg">
-								<img class="pic-2 img-fluid" src="assets/images/shop-88.jpg">
-							</a>
-							<ul class="social">
-									<li><a href="#" data-tip="Quick View"><span class="fa fa-eye"></span></a></li>
-
-									<li><a href="#" data-tip="Add to Cart"><span class="fa fa-shopping-bag"></span></a>
-									</li>
-							</ul>
-							<div class="transmitv single-item">
-									<form action="#" method="post">
-											<input type="hidden" name="cmd" value="_cart">
-											<input type="hidden" name="add" value="1">
-											<input type="hidden" name="transmitv_item" value="Blue Sweater">
-											<input type="hidden" name="amount" value="499.99">
-											<button type="submit" class="transmitv-cart ptransmitv-cart add-to-cart">
-												Add to Cart
-											</button>
-										</form>
-									</div>
-						</div>
-						<div class="product-content">
-							<h3 class="title"><a href="#">Blue Sweater</a></h3>
-							<span class="price"><del>$575.00</del>$499.99</span>
-						</div>
-					</div>
-
-				</div>
+			
+		
+				
+		
 
 
-			</div>
+		
 			<!-- //row-->
 		</div>
 	</div>
@@ -1043,6 +806,30 @@ Author URL: http://w3layouts.com
       <!-- //titels-5 -->
       <!-- move top -->
 
+	  <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+
+	  <!-- TODO: Add SDKs for Firebase products that you want to use
+	   https://firebase.google.com/docs/web/setup#available-libraries -->
+	  <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-analytics.js"></script>
+	  <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+	  <script>
+		// Your web app's Firebase configuration
+		// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+		var firebaseConfig = {
+			apiKey: "AIzaSyCNltyhQM5Ud_Vv7TphHaNyiUbeL5Vqtd8",
+    authDomain: "project-khachhang-md.firebaseapp.com",
+    databaseURL: "https://project-khachhang-md-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId: "project-khachhang-md",
+    storageBucket: "project-khachhang-md.appspot.com",
+    messagingSenderId: "369257503203",
+    appId: "1:369257503203:web:a422cb40bf91cb2355e8d6",
+    measurementId: "G-50BL7XMEEK"
+		};
+		// Initialize FirebaseW
+		firebase.initializeApp(firebaseConfig);
+		firebase.analytics();
+	  </script>
+	  <script src="./assets/js/products.js/index.js"></script>
       <script>
           // When the user scrolls down 20px from the top of the document, show the button
           window.onscroll = function () {
