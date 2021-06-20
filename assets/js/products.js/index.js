@@ -23,7 +23,7 @@ const loadingProduct = (data) => {
         <div class="product-image2">
             
                 <img class="pic-1 img-fluid" src="${data[i].link1}">
-98                <img class="pic-2 img-fluid" src="${data[i].link2}">
+              <img class="pic-2 img-fluid" src="${data[i].link2}">
             
                 <button class="add-to-cart" onclick="myFunction(${data[i].id})">Click</button>
            
@@ -65,12 +65,16 @@ function myFunction(id) {
   dataCart.forEach((item) => {
     ulcart.innerHTML += `	<li> 
       <span>${item.name}</span>
-      <span> số lượng : ${item.soluong}</span>
+      <div>
+      <span class="soluong"> ${item.soluong}</span>
       <span>${item.price}</span>
+      </div>
+      
   </li>`;
     TinhTien += parseInt(item.price) * parseInt(item.soluong);
   });
-  tongtien.innerText = "Tổng Tiền" + TinhTien;
+  tongtien.innerText = "Tổng Tiền : " + TinhTien + " VND";
+  cartContainer.classList.remove("offCart");
   cartContainer.classList.add("onCart");
 }
 function clickCart() {
@@ -82,5 +86,40 @@ function clickCart() {
     cartContainer.classList.remove("offCart");
     cartContainer.classList.add("onCart");
   }
+}
+function checkout() {
+  let conficProducts = document.getElementById("conficProducts");
+  let conficSumMoney = document.getElementById("conficSumMoney");
+  conficSumMoney;
+  if (dataCart.length > 0) {
+    dataCart.forEach((item) => {
+      conficProducts.innerHTML += `<li> 
+      <span>${item.name}</span>
+      <div>
+      <span class="soluong"> ${item.soluong}</span>
+      <span>${item.price}</span>
+      </div>
+      
+  </li>`;
+    });
+    conficSumMoney.innerText = "TỔNG TIỀN : " + TinhTien + "VND";
+  }
+}
+async function sendInfoCustom() {
+  let myform = document.getElementById("myform");
+  let name = document.getElementById("name");
+  let SDT = document.getElementById("SDT");
+  let address = document.getElementById("address");
+  let dataSend = {
+    name: name.value,
+    SDT: SDT.value,
+    address: address.value,
+    products: dataCart,
+  };
+  await firebase.database().ref("Customer").push(dataSend);
+  name.value = "";
+  SDT.value = "";
+  address.value = "";
+  dataCart = [];
 }
 load(loadingProduct);

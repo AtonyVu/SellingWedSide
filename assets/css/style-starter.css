@@ -18979,24 +18979,33 @@ a.text-dark:focus {
   left: 70%;
   background-color: #fbfbfb;
   width: 27%;
-  height: 30%;
+
   padding: 20px 20px;
   border-radius: 10px;
   display: flex;
   justify-content: space-around;
   flex-direction: column;
   display: none;
-  z-index: 3;
+  z-index: 9999;
   border: 1px solid #ddd;
+  animation: zoomIn 0.3s ease;
 }
-/*# sourceMappingURL=style-starter.css.map */
 .cartContainer ul {
   background: #f5f0f0;
+  text-align: left;
+  padding: 5px 5px;
 }
 .cartContainer ul li {
   list-style: none;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  text-align: center;
+}
+.cartContainer ul li div {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
 }
 .onCart {
   display: flex;
@@ -19007,8 +19016,45 @@ a.text-dark:focus {
 .header_cart {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 10px;
 }
 .header_cart span {
   cursor: pointer;
   background-color: #f5f0f0;
+}
+.cart_content {
+  margin-top: 14px;
+  font-size: 17px;
+  font-weight: 800;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cart_content span {
+}
+.checkout {
+  font-weight: 900;
+}
+.soluong {
+  color: #ff7315;
+}
+.conficProducts {
+  padding: 10px 20px;
+}
+.conficProducts li {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  text-align: center;
+}
+.conficProducts li div {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+}
+.conficSumMoney {
+  font-weight: 800;
+  color: #040505;
+  margin-top: 30px;
 }
