@@ -25,7 +25,7 @@ const loadingProduct = (data) => {
                 <img class="pic-1 img-fluid" src="${data[i].link1}">
               <img class="pic-2 img-fluid" src="${data[i].link2}">
             
-                <button class="add-to-cart" onclick="myFunction(${data[i].id})">Click</button>
+                <button class="add-to-cart" onclick="myFunction(${data[i].id})">MUA NGAY</button>
            
            
      
@@ -121,5 +121,7 @@ async function sendInfoCustom() {
   SDT.value = "";
   address.value = "";
   dataCart = [];
+  cartContainer.classList.remove("onCart");
+  cartContainer.classList.add("offCart");
 }
 load(loadingProduct);
