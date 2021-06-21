@@ -5780,9 +5780,8 @@ input#amount1 {
 
 /*-- //Responsive --*/
 .w3l-grids-hny-2 {
-  /*--/hover--*/
-  /*********************** Demo - 13 *******************/
-  /*--//hover--*/
+  position: relative;
+  z-index: -1;
 }
 
 .w3l-grids-hny-2 .welcome-image {
@@ -5943,6 +5942,10 @@ input#amount1 {
 
 .w3l-content-w-photo-6 .align-photo-6-inf-cols {
   align-items: center;
+}
+.w3l-content-w-photo-6 {
+  z-index: -1;
+  position: relative;
 }
 
 @media all and (max-width: 992px) {
